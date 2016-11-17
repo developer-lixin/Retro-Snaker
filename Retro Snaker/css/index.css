@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	background: #E7E7E7;
+}
+#snake {
+	width: 800px;
+	border: 2px solid coral;
+}
+.info {
+	height: 60px;
+	border-bottom: 2px solid coral;
+	text-align: center;
+	font: 28px/60px "宋体";
+}
+#map {
+	border-bottom: 1px solid coral;
+}
+#map table {
+	margin: 0 auto;
+	border: 1px solid coral;
+}
+#map table td {
+	width: 22px;
+	height: 22px;
+	border: 1px solid darkorange;
+	background: #fff;
+}
+/*------------------------------------------*/
+#map table td.snake {
+	background: cornflowerblue;
+}
+#map table td.food {
+	background: greenyellow;
+}
+#map table td.block {
+	background: #333;
+}
+#map table td.skate {
+	background: yellow;
+}
+#map table td.break {
+	background: darkorchid;
+}
+/*----------------------------*/
+.help {
+	height: 50px;
+	display: flex;
+}
+.left {
+	width: 75%;
+	display: flex;
+	border-right: 1px solid red;
+	justify-content: space-around;
+	align-items: center;
+}
+.right {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.left div {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.left div span {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	border: 1px solid blueviolet;
+	background: #1E90FF;
+	margin-right: 5px;
+}

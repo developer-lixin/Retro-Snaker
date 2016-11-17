@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div id="snake">
+			<div class="info">贪吃蛇</div>
+			<div id="map">
+				<!--<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>-->
+			</div>
+			<div class="help">
+				<div class="left">
+					<div><span></span>蓝瘦</div>
+					<div><span></span>香菇</div>
+					<div id="start"><span></span>神器</div>
+					<div><span></span>千万别吃</div>
+				</div>
+				<div class="right">
+					<span>战绩：<i id="score">0</i>分</span>
+				</div>
+			</div>
+		</div>
+		<script>
+			(function() {
+				var colors = [
+					'greenyellow',
+					'#333333',
+					'yellow',
+					'darkorchid'
+				];
+				var spans = document.querySelectorAll('.left span');
+				spans = [...spans];
+				spans.forEach((item,i)=>{
+					item.style.background = colors[i];
+				})
+			})();
+		</script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
